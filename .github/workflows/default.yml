@@ -26,7 +26,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: msshapira/firebase-tools
+          images: msshapira/flutter-build-with-tools
           tags: type=raw,value=latest
 
       - name: Build and push Docker image
