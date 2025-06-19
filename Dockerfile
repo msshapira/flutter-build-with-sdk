@@ -2,6 +2,8 @@ FROM ghcr.io/cirruslabs/flutter:3.29.3
 
 # install atp packages
 RUN apt update && apt install -y protobuf-compiler jq 
+RUN curl -Lo /usr/local/bin/firebase https://firebase.tools/bin/linux/latest
+RUN chmod +x /usr/local/bin/firebase
 # Set environment variables
 ENV ANDROID_HOME=/opt/android-sdk
 ENV PATH="${PATH}:${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/emulator"
