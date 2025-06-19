@@ -1,4 +1,4 @@
-FROM ghcr.io/cirruslabs/flutter:3.29.3
+FROM ghcr.io/cirruslabs/flutter:3.32.0
 
 # install atp packages
 RUN apt update && apt install -y protobuf-compiler jq 
@@ -24,5 +24,6 @@ RUN yes | sdkmanager --licenses && \
     "platforms;android-34" \
     "build-tools;34.0.0" \
     "ndk;26.3.11579264" \
+    "ndk;27.0.12077973" \
     "cmake;3.22.1"
 
