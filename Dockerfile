@@ -1,4 +1,4 @@
-FROM ghcr.io/cirruslabs/flutter:3.35.0
+FROM ghcr.io/cirruslabs/flutter:3.44.0
 
 # install atp packages
 RUN apt update && apt install -y protobuf-compiler jq 
